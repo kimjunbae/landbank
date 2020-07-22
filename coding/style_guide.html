@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>서울투자운용주식회사</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="robots" content="index,follow" />
+
+		<meta property="og:type" content="website">
+		<meta property="og:image" content=""> 
+		<meta property="og:url" content="http://coding.allzib.net/">
+		<meta property="og:title" content="서울투자운용주식회사">  
+		<meta property="og:description" content="서울투자운용주식회사">
+		<meta name="description" content="서울투자운용주식회사">
+		<meta name="keywords" content="토지">
+
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="pragma" content="no-cache" />
+		
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <link rel="stylesheet" href="/css/style.css">
+
+		<style>
+
+			body {
+				padding: 5rem;
+			}
+
+			p {
+				margin: 0;
+			}
+			svg {
+				width: 24px;
+				height: 24px;
+				fill: #fff;
+			}
+
+			.box {
+				overflow: hidden;
+				width: 100%;
+				padding: 2rem 0;
+				text-align: center;
+				margin: 0 auto;
+			}
+
+			span {
+				display: inline-block;
+				width: 24px;
+				height: 24px;
+				margin: 0;
+				background-repeat: no-repeat;
+			}
+
+			.icon_sprite {
+				background: url('/img/icon_stripe.svg') no-repeat;
+				
+			}
+
+			.icon_arrow_down {
+				background-position: 0 0;
+			}
+
+			.icon_arrow_left {
+				background-position: -79px 0;
+			}
+
+			.icon_arrow_right {
+				background-position: -158px 0;
+			}
+
+			.icon_arrow_up {
+				background-position: -238px 0;
+			}
+
+			.icon_alram {
+				background-position: -317px 0;
+			}
+			.icon_calendar {
+				background-position: -395px 0;
+			}
+
+			.icon_check {
+				background-position: -474px 0;
+			}
+
+			.icon_check_circle {
+				background-position: -553px 0;
+			}
+
+			.icon_checklist {
+				background-position: 0 -46px;
+			}
+
+			.icon_close_circle_bg {
+				background-position: -79px -46px;
+			}
+
+			.icon_clock {
+				background-position: -158px -46px;
+			}
+			.icon_close {
+				background-position: -237px -46px;
+			}
+
+			.icon_close_circle {
+				background-position: -316px -46px;
+			}
+
+			.icon_close_memo {
+				background-position: -394px -46px;
+			}
+
+			.icon_close_dashboard {
+				background-position: -474px -46px;
+			}
+			.icon_close_delete {
+				background-position: -553px -46px;
+			}
+
+			.icon_down {
+				background-position: 0 -92px;
+			}
+
+			.icon_download {
+				background-position: -79px -92px;
+			}
+
+			.icon_edit {
+				background-position: -158px -92px;
+			}
+
+			.icon_more {
+				background-position: -237px -92px;
+			}
+
+			.icon_error {
+				background-position: -316px -92px;
+			}
+
+			.icon_exclamation {
+				background-position: -394px -92px;
+			}
+
+			.icon_exclamation_circle {
+				background-position: -474px -92px;
+			}
+
+			.icon_filter {
+				background-position: -553px -92px;
+			}
+
+			.icon_file {
+				background-position: 0 -138px;
+			}
+
+			.icon_folder {
+				background-position: -79px -138px;
+			}
+
+			.icon_home {
+				background-position: -158px -138px;
+				transform: rotate(-180deg);
+			}
+
+			.icon_inbox {
+				background-position: -237px -138px;
+			}
+
+			.icon_info {
+				background-position: -316px -138px;
+			}
+
+			.icon_info_circle {
+				background-position: -395px -138px;
+			}
+
+			.icon_left {
+				background-position: -474px -138px;
+			}
+			.icon_link {
+				background-position: -553px -138px;
+			}
+
+			.icon_loading {
+				background-position: 0 -184px;
+			}
+
+			.icon_minus {
+				background-position: -79px -184px;
+			}
+
+			.icon_minus_square {
+				background-position: -81px -186px;
+				border: 2px solid rgb(201,203,217);
+				border-radius: 2px;
+			}
+
+			.icon_minus_clrcle {
+				background-position: -81px -186px;
+				border: 2px solid rgb(201,203,217);
+				border-radius: 100%;
+			}
+
+			.icon_move {
+				background-position: -316px -184px;
+			}
+
+			.icon_clip {
+				background-position: -394px -184px;
+			}
+
+			.icon_plus {
+				background-position: -474px -184px;
+			}
+
+			.icon_plus_square {
+				background-position: -476px -186px;
+				border: 2px solid rgb(201,203,217);
+			}
+
+			.icon_plus_circle {
+				background-position: 0 -230px;
+			}
+
+			.icon_right {
+				background-position: -79px -230px;
+			}
+
+			.icon_save {
+				background-position: -158px -230px;
+			}
+
+			.icon_search {
+				background-position: -237px -230px;
+			}
+
+			.icon_setting {
+				background-position: -316px -230px;
+			}
+
+			.icon_sort {
+				background-position: -394px -230px;
+			}
+
+			.icon_sync {
+				background-position: -474px -230px;
+			}
+
+			.icon_up {
+				background-position: -553px -230px;
+			}
+
+
+			.icon_upload {
+				background-position: 0 -276px;
+			}
+			.icon_location {
+				background-position: -79px -276px;
+			}
+
+			.alert-box {
+				display: inline-block;
+				position: relative;
+				overflow: hidden;
+				margin: 0 auto;
+				padding: 15px 96px 15px 24px;
+				border-radius: 4px;
+				background: transparent;
+				text-align: center;
+				color: #fff;
+				font-size: 14px;
+				line-height: 1.5em;
+				font-weight: bold;
+				letter-spacing: -0.5px;
+			}			
+
+			.alert-box > svg {
+				display: inline-block;
+				float: left;
+				margin-top: -3px
+			}
+
+			.alert-box p.alert-txt-spot {
+				display: inline-block;
+				float: left;
+				padding-left: 10px;
+				text-align: left;
+			}
+
+			.alert-box p.alert-txt-spot > em {
+				font-style: normal;
+				font-size: 12px;
+				text-align: left;
+			}
+
+			.alert-box .alert-box-close {
+				position: absolute;
+				top: 15px;
+				right: 25px;
+				width: 16px;
+				height: 16px;
+				z-index: 1;
+			}
+
+			.alert-box.alert-normal {
+				background: #3f944b;
+			}
+			.alert-box.alert-warning {
+				background: #ff0000;
+			}
+			.alert-box.alert-success {
+				background: #049bfa;
+			}
+			.alert-box.alert-error {
+				background: #dc7208;
+			}
+
+			.tooltip {
+				display: inline-block;
+				position: relative;
+				font-weight: bold;
+				color: #fff;
+				font-size: 14px;
+				padding: 10px 15px;
+				box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+				background-color: rgba(0, 0, 0, 0.75);
+				text-align: center;
+				border-radius: 5px
+			}
+
+			.tooltip-left::before {
+			  content: '';
+			  position: absolute;
+			  display: block;
+			  width: 0px;
+			  left: 0;
+			  top: 50%;
+			  border: 15px solid transparent;
+			  border-left: 0;
+			  border-right: 15px solid #5494db;
+			  -webkit-transform: translate(calc(-100% - 5px), -50%);
+					  transform: translate(calc(-100% - 5px), -50%);
+			}
+
+			.tooltip-top::before {
+			  content: '';
+			  position: absolute;
+			  display: block;
+			  width: 0px;
+			  left: 50%;
+			  top: 0;
+			  border: 15px solid transparent;
+			  border-top: 0;
+			  border-bottom: 15px solid #5494db;
+			  -webkit-transform: translate(-50%, calc(-100% - 5px));
+					  transform: translate(-50%, calc(-100% - 5px));
+			}
+
+			.tooltip-right::before {
+			  content: '';
+			  position: absolute;
+			  display: block;
+			  width: 0px;
+			  right: 0;
+			  top: 50%;
+			  border: 5px solid transparent;
+			  border-right: 0;
+			  border-left: 5px solid rgba(0, 0, 0, 0.75);
+			  -webkit-transform: translate(calc(100%), -50%);
+					  transform: translate(calc(100%), -50%);
+					  z-index: -1;
+						
+			}
+
+			.tooltip-bottom::before {
+			  content: '';
+			  position: absolute;
+			  display: block;
+			  width: 0px;
+			  left: 50%;
+			  bottom: 0;
+			  border: 4px solid transparent;
+			  border-bottom: 0;
+			  border-top: 4px solid rgba(0, 0, 0, 0.75);
+			  -webkit-transform: translate(-50%, calc(100%));
+					  transform: translate(-50%, calc(100%));
+					  z-index: -1;
+			}
+
+			@media all and (-ms-high-contrast:none) {
+				*::-ms-backdrop, .tooltip-bottom::before {
+					bottom: -4px !important;
+				}
+			}
+
+			.btn {
+				display: inline-block;
+				width: 120px;
+				line-height: 32px;
+				color: #fff;
+				font-size: 12px;
+				text-align: center;
+				background: #049bfa;
+				margin: 0 10px;
+			}
+
+			.btn.btn-large {
+				font-size: 14px;
+				line-height: 40px;
+			}
+
+
+			.btn.btn-small {
+				font-size: 10px;
+				line-height: 24px;
+			}
+
+			.bg_color_success {
+				background: #049bfa
+			}
+
+
+
+
+
+		</style>
+    </head>
+
+    <body>
+
+		<div class="box">
+			<span class="icon_sprite icon_arrow_down"></span>
+			<span class="icon_sprite icon_arrow_left"></span>
+			<span class="icon_sprite icon_arrow_right"></span>
+			<span class="icon_sprite icon_arrow_up"></span>
+			<span class="icon_sprite icon_alram"></span>
+			<span class="icon_sprite icon_calendar"></span>
+			<span class="icon_sprite icon_check"></span>
+			<span class="icon_sprite icon_check_circle"></span>
+			
+			<span class="icon_sprite icon_checklist"></span>
+			<span class="icon_sprite icon_close_circle_bg"></span>
+			<span class="icon_sprite icon_clock"></span>
+			<span class="icon_sprite icon_close"></span>
+			<span class="icon_sprite icon_close_circle"></span>
+			<span class="icon_sprite icon_close_memo"></span>
+			<span class="icon_sprite icon_close_dashboard"></span>
+			<span class="icon_sprite icon_close_delete"></span>
+
+			
+
+			<span class="icon_sprite icon_down"></span>
+			<span class="icon_sprite icon_download"></span>
+			<span class="icon_sprite icon_edit"></span>
+			<span class="icon_sprite icon_more"></span>
+			<span class="icon_sprite icon_error"></span>
+			<span class="icon_sprite icon_exclamation"></span>
+			<span class="icon_sprite icon_exclamation_circle"></span>
+			<span class="icon_sprite icon_filter"></span>
+
+			
+
+			<span class="icon_sprite icon_file"></span>
+			<span class="icon_sprite icon_folder"></span>
+			<span class="icon_sprite icon_home"></span>
+			<span class="icon_sprite icon_inbox"></span>
+			<span class="icon_sprite icon_info"></span>
+			<span class="icon_sprite icon_info_circle"></span>
+			<span class="icon_sprite icon_left"></span>
+			<span class="icon_sprite icon_link"></span>
+
+			
+
+			<span class="icon_sprite icon_loading"></span>
+			<span class="icon_sprite icon_minus"></span>
+			<span class="icon_sprite icon_minus_square"></span>
+			<span class="icon_sprite icon_minus_clrcle"></span>
+			<span class="icon_sprite icon_move"></span>
+			<span class="icon_sprite icon_clip"></span>
+			<span class="icon_sprite icon_plus"></span>
+			<span class="icon_sprite icon_plus_square"></span>
+
+			
+
+			<span class="icon_sprite icon_plus_circle"></span>
+			<span class="icon_sprite icon_right"></span>
+			<span class="icon_sprite icon_save"></span>
+			<span class="icon_sprite icon_search"></span>
+			<span class="icon_sprite icon_setting"></span>
+			<span class="icon_sprite icon_sort"></span>
+			<span class="icon_sprite icon_sync"></span>
+			<span class="icon_sprite icon_up"></span>
+
+			
+
+			<span class="icon_sprite icon_upload"></span>
+			<span class="icon_sprite icon_location"></span>
+		</div>
+
+		<div style="padding: 20px 0"></div>
+
+		<a href="" class="btn btn-large">Link</a>
+		<a href="" class="btn">Link</a>
+		<a href="" class="btn btn-small">Link</a>
+
+		<div style="padding: 20px 0"></div>
+
+		<div class="tooltip tooltip-bottom">arrow bottom</div>
+
+		<div style="padding: 20px 0"></div>
+
+		<div class="alert-box alert-normal">
+			<svg><use xlink:href="#checkCircle"/></svg>
+			<p class="alert-txt-spot">
+				5단계 감정액등록이 완료되어, 최종 사업성 적합 판단을 진행중에 있습니다.<br/>
+				<em>최종결과는 매도자분께 별도 연락드리겠습니다.</em>
+			</p>
+			<a href="" class="alert-box-close"><svg><use xlink:href="#alertClose"/></svg></a>
+		</div>
+
+		<div style="padding: 20px 0"></div>
+
+		<div class="alert-box alert-warning">
+			<svg><use xlink:href="#error"/></svg>
+			<p class="alert-txt-spot">
+				5단계 감정액등록이 완료되어, 최종 사업성 적합 판단을 진행중에 있습니다.<br/>
+			</p>
+			<a href="" class="alert-box-close"><svg><use xlink:href="#alertClose"/></svg></a>
+		</div>
+
+		<div style="padding: 20px 0"></div>
+
+		<div class="alert-box alert-success">
+			<svg><use xlink:href="#complete"/></svg>
+			<p class="alert-txt-spot">
+				5단계 감정액등록이 완료되어, 최종 사업성 적합 판단을 진행중에 있습니다.<br/>
+			</p>
+			<a href="" class="alert-box-close"><svg><use xlink:href="#alertClose"/></svg></a>
+		</div>
+
+		<div style="padding: 20px 0"></div>
+
+		<div class="alert-box alert-error">
+			<svg><use xlink:href="#error"/></svg>
+			<p class="alert-txt-spot">
+				5단계 감정액등록이 완료되어, 최종 사업성 적합 판단을 진행중에 있습니다.<br/>
+			</p>
+			<a href="" class="alert-box-close"><svg><use xlink:href="#alertClose"/></svg></a>
+		</div>
+
+		<svg display="none">
+			<symbol width="24" height="24" viewBox="0 0 24 24" id="complete">	
+				 <path id="prefix__a" d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm7.291 19.291c-.946.947-2.05 1.693-3.279 2.21-1.27.54-2.62.811-4.012.811-1.392 0-2.742-.271-4.013-.808-1.228-.52-2.33-1.263-3.278-2.21-.947-.947-1.693-2.051-2.21-3.28-.54-1.272-.812-2.622-.812-4.014 0-1.392.272-2.742.81-4.013.52-1.228 1.262-2.33 2.21-3.278.946-.947 2.05-1.693 3.278-2.21 1.273-.54 2.623-.812 4.015-.812 1.392 0 2.742.272 4.012.81 1.229.52 2.33 1.262 3.28 2.21.946.946 1.692 2.05 2.21 3.278.539 1.273.81 2.623.81 4.015 0 1.392-.271 2.742-.808 4.012-.52 1.229-1.263 2.333-2.213 3.28zm-4.52-2.753h-1.998V8.332c0-.466-.377-.844-.843-.844H9.68c-.467 0-.844.378-.844.844 0 .466.377.844.844.844h1.406v7.362H9.089c-.466 0-.844.377-.844.843 0 .467.378.844.844.844h5.681c.467 0 .844-.377.844-.844 0-.466-.377-.843-.844-.843zm-3.685-11.37c0 .466.378.844.844.844.466 0 .843-.378.843-.844 0-.466-.377-.844-.843-.844-.466 0-.844.378-.844.844z"/>
+			</symbol>
+			<symbol width="24" height="24" viewBox="0 0 24 24" id="error">	
+				<path d="M11.046 3.083c.597-.162 1.223-.084 1.762.216.36.202.66.495.866.848l8.338 14.318c.305.525.384 1.138.221 1.722-.163.585-.55 1.073-1.09 1.374-.35.195-.747.298-1.149.298H3.32C2.04 21.86 1 20.841 1 19.588c0-.394.105-.783.305-1.123L9.643 4.149c.307-.528.806-.906 1.403-1.066zm.615 1.434c-.07 0-.138.009-.207.028-.2.052-.365.178-.468.355L2.648 19.216c-.067.113-.101.244-.101.374 0 .418.346.757.773.757h16.676c.134 0 .267-.034.383-.099.18-.1.31-.263.363-.458.054-.196.028-.4-.073-.577L12.33 4.898l-.057-.084c-.063-.08-.14-.147-.231-.198-.118-.065-.25-.099-.382-.099zm-.005 12.345c.475 0 .86.376.86.841v.253c0 .464-.385.84-.86.84s-.86-.376-.86-.84v-.253c0-.465.385-.841.86-.841zm0-8.666c.475 0 .86.376.86.841v5.637c0 .465-.385.842-.86.842s-.86-.377-.86-.842V9.037c0-.465.385-.841.86-.841z"/>
+			</symbol>
+
+			<symbol width="24" height="24" viewBox="0 0 24 24" id="checkCircle">	
+				<path d="M16.905 7.162l-7.675 7.7-2.002-3.504c-.232-.406-.745-.546-1.15-.314-.406.232-.547.745-.315 1.15l2.55 4.465c.155.272.44.427.734.427.143 0 .286-.035.417-.11.075-.045.143-.096.2-.157l.009-.01 8.425-8.451c.329-.33.329-.865-.002-1.193-.328-.333-.86-.333-1.19-.003zM12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm7.291 19.291c-.946.947-2.05 1.693-3.279 2.21-1.27.54-2.62.811-4.012.811-1.392 0-2.742-.271-4.013-.808-1.228-.52-2.33-1.263-3.278-2.21-.947-.947-1.693-2.051-2.21-3.28-.54-1.272-.812-2.622-.812-4.014 0-1.392.272-2.742.81-4.013.52-1.228 1.262-2.33 2.21-3.278.946-.947 2.05-1.693 3.278-2.21 1.273-.54 2.623-.812 4.015-.812 1.392 0 2.742.272 4.012.81 1.229.52 2.33 1.262 3.28 2.21.946.946 1.692 2.05 2.21 3.278.539 1.273.81 2.623.81 4.015 0 1.392-.271 2.742-.808 4.012-.52 1.229-1.263 2.333-2.213 3.28z"/>
+			</symbol>
+
+			<symbol width="24" height="24" viewBox="0 0 24 24" id="alertClose">
+				<path d="M13.305 11.998l5.972-5.968c.361-.36.361-.944 0-1.303-.36-.36-.944-.36-1.303 0L12 10.692 6.026 4.725c-.361-.36-.945-.36-1.303 0-.361.36-.361.945 0 1.303l5.972 5.967-5.972 5.97c-.361.36-.361.944 0 1.303.18.18.417.27.651.27.237 0 .471-.09.652-.27L12 13.301l5.974 5.97c.18.18.415.269.652.269.236 0 .47-.09.651-.27.361-.36.361-.944 0-1.303l-5.972-5.97z"/>
+			</symbol>
+
+			<symbol width="24" height="24" viewBox="0 0 24 24" id="bike">
+				<path d="M11.046 3.083c.597-.162 1.223-.084 1.762.216.36.202.66.495.866.848l8.338 14.318c.305.525.384 1.138.221 1.722-.163.585-.55 1.073-1.09 1.374-.35.195-.747.298-1.149.298H3.32C2.04 21.86 1 20.841 1 19.588c0-.394.105-.783.305-1.123L9.643 4.149c.307-.528.806-.906 1.403-1.066zm.615 1.434c-.07 0-.138.009-.207.028-.2.052-.365.178-.468.355L2.648 19.216c-.067.113-.101.244-.101.374 0 .418.346.757.773.757h16.676c.134 0 .267-.034.383-.099.18-.1.31-.263.363-.458.054-.196.028-.4-.073-.577L12.33 4.898l-.057-.084c-.063-.08-.14-.147-.231-.198-.118-.065-.25-.099-.382-.099zm-.005 12.345c.475 0 .86.376.86.841v.253c0 .464-.385.84-.86.84s-.86-.376-.86-.84v-.253c0-.465.385-.841.86-.841zm0-8.666c.475 0 .86.376.86.841v5.637c0 .465-.385.842-.86.842s-.86-.377-.86-.842V9.037c0-.465.385-.841.86-.841z"/></path>
+			</symbol>
+
+			<symbol width="24" height="24" viewBox="0 0 24 24" id="bell">
+				<path d="M11.5,22C11.64,22 11.77,22 11.9,21.96C12.55,21.82 13.09,21.38 13.34,20.78C13.44,20.54 13.5,20.27 13.5,20H9.5A2,2 0 0,0 11.5,22M18,10.5C18,7.43 15.86,4.86 13,4.18V3.5A1.5,1.5 0 0,0 11.5,2A1.5,1.5 0 0,0 10,3.5V4.18C7.13,4.86 5,7.43 5,10.5V16L3,18V19H20V18L18,16M19.97,10H21.97C21.82,6.79 20.24,3.97 17.85,2.15L16.42,3.58C18.46,5 19.82,7.35 19.97,10M6.58,3.58L5.15,2.15C2.76,3.97 1.18,6.79 1,10H3C3.18,7.35 4.54,5 6.58,3.58Z"></path>
+			</symbol>
+
+			<symbol width="24" height="24" viewBox="0 0 24 24" id="arrow">
+				<path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+			</symbol>
+
+		</svg>
+        
+        <!-- Optional JavaScript -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+			$(function() {
+			});
+		</script>
+	</body>
+</html>
